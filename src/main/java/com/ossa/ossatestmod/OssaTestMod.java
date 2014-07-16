@@ -3,12 +3,14 @@ package com.ossa.ossatestmod;
 // Internal Imports
 
 import com.ossa.ossatestmod.handler.ConfigurationHandler;
+import com.ossa.ossatestmod.init.ModBlocks;
 import com.ossa.ossatestmod.init.ModItems;
 import com.ossa.ossatestmod.proxy.IProxy;
 import com.ossa.ossatestmod.reference.Reference;
 import com.ossa.ossatestmod.utility.LogHelper;
 
 // Forge Imports
+
 
 
 import cpw.mods.fml.common.Mod;
@@ -36,6 +38,8 @@ public class OssaTestMod
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());	
 		
 		ModItems.init();
+		
+		ModBlocks.init();
 	}
 			
 	@Mod.EventHandler

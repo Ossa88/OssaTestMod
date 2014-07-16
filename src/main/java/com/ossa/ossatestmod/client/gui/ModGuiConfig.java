@@ -15,6 +15,8 @@ import cpw.mods.fml.client.config.IConfigElement;
 public class ModGuiConfig extends GuiConfig
 {
 
+	// Handles In Game Configure Screen
+	
 	public ModGuiConfig(GuiScreen guiScreen)
 	{
 		super(guiScreen,

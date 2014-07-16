@@ -2,11 +2,17 @@ package com.ossa.ossatestmod.init;
 
 import com.ossa.ossatestmod.item.ItemCore;
 import com.ossa.ossatestmod.item.ItemMapleLeaf;
+import com.ossa.ossatestmod.reference.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModItems 
 {
+	
+	/*
+	 * Master Init File for All item registration
+	 */
+	@GameRegistry.ObjectHolder(Reference.MODID)	
 	public static final ItemCore mapleLeaf = new ItemMapleLeaf();
 	
 	public static void init()

@@ -13,6 +13,7 @@ public class GuiFactory implements IModGuiFactory
 	public void initialize(Minecraft minecraftInstance) 
 	{
 		// TODO Auto-generated method stub
+		// Not Currently In Use
 		
 	}
 
@@ -27,6 +28,7 @@ public class GuiFactory implements IModGuiFactory
 	public Set<RuntimeOptionCategoryElement> runtimeGuiCategories() 
 	{
 		// TODO Auto-generated method stub
+		// Not Currently In Use
 		return null;
 	}
 
@@ -34,6 +36,7 @@ public class GuiFactory implements IModGuiFactory
 	public RuntimeOptionGuiHandler getHandlerFor(RuntimeOptionCategoryElement element) 
 	{
 		// TODO Auto-generated method stub
+		// Not Currently In Use
 		return null;
 	}
 
