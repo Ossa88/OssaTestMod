@@ -6,15 +6,16 @@ import com.ossa.ossatestmod.reference.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
+@GameRegistry.ObjectHolder(Reference.MODID)	
 public class ModItems 
 {
 	
 	/*
 	 * Master Init File for All item registration
 	 */
-	@GameRegistry.ObjectHolder(Reference.MODID)	
+
 	public static final ItemCore mapleLeaf = new ItemMapleLeaf();
-	
+
 	public static void init()
 	{
 		GameRegistry.registerItem(mapleLeaf, "mapleLeaf");
