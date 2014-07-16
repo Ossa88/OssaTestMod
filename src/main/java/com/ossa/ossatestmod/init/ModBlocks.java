@@ -6,9 +6,10 @@ import com.ossa.ossatestmod.reference.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
+
+@GameRegistry.ObjectHolder(Reference.MODID)
 public class ModBlocks 
 {
-	@GameRegistry.ObjectHolder(Reference.MODID)
 	public static final BlockCore flag = new BlockFlag();
 	
 	public static void init()
