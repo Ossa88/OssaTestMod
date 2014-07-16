@@ -8,19 +8,12 @@ import net.minecraft.item.Item;
 
 public class CreativeTabOTM 
 {
-	public static final CreativeTabs OTM_TAB = new CreativeTabs(Reference.MODID)
+	public static final CreativeTabs OTM_TAB = new CreativeTabs(Reference.MODID.toLowerCase())
 	{
 		@Override
 		public Item getTabIconItem()
 		{
 			return ModItems.mapleLeaf;
-		}
-		
-		@Override
-		public String getTranslatedTabLabel()
-		{
-			return "Ossa Test Mod";
-			
 		}
 	};
 }
