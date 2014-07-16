@@ -1,5 +1,6 @@
 package com.ossa.ossatestmod.item;
 
+import com.ossa.ossatestmod.creativetab.CreativeTabOTM;
 import com.ossa.ossatestmod.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -13,6 +14,7 @@ public class ItemCore extends Item
     public ItemCore()
     {
         super();
+        this.setCreativeTab(CreativeTabOTM.OTM_TAB);
     }
 
     @Override

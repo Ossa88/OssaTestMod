@@ -1,5 +1,6 @@
 package com.ossa.ossatestmod.block;
 
+import com.ossa.ossatestmod.creativetab.CreativeTabOTM;
 import com.ossa.ossatestmod.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -14,6 +15,7 @@ public class BlockCore extends Block
 	public BlockCore(Material material)
 	{
 		super(material); 
+        this.setCreativeTab(CreativeTabOTM.OTM_TAB);
 	}
 
 	public BlockCore()
