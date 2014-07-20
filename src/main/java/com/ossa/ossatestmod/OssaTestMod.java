@@ -2,6 +2,8 @@ package com.ossa.ossatestmod;
 
 // Internal Imports
 
+import net.minecraftforge.oredict.OreDictionary;
+
 import com.ossa.ossatestmod.handler.ConfigurationHandler;
 import com.ossa.ossatestmod.init.ModBlocks;
 import com.ossa.ossatestmod.init.ModItems;
@@ -10,6 +12,7 @@ import com.ossa.ossatestmod.reference.Reference;
 import com.ossa.ossatestmod.utility.LogHelper;
 
 // Forge Imports
+
 
 
 
@@ -52,5 +55,15 @@ public class OssaTestMod
 	public void postInit(FMLPostInitializationEvent event)
 	{
 		LogHelper.info("Post Initialization Complete!");
+		
+		/* For Ore Library debugging
+		for (String oreName : OreDictionary.getOreNames())
+		{
+			// Returns all ore names in use
+			LogHelper.info(oreName);
+			// Returns Items Stacks Registered Under a particular ore name
+			OreDictionary.getOres(oreName);
+		}
+		*/
 	}
 }
